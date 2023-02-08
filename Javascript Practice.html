@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1 style="text-align: center;color: black;font-size: 40px;">My First JavaScript</h1>
+    <h3>Date And Time</h3>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()" style="margin-top:5px;">
+
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+    <hr>
+    <h3  style="margin-top: 40px;">How does JavaScript Done.</h3>
+    <p id="demo1">JavaScript change this Content.</p>
+
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click This!</button>
+
+    <hr>
+    <h3  style="margin-top: 40px;">JavaScript can change HTML attribute values.</h3>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('image1').src='lightblub.png'">Turn on the light</button>
+    <img id="image1" src="blub.png" style="width:100px">
+    <button onclick="document.getElementById('image1').src='blub.png'">Turn off the light</button>
+
+    <hr>
+    <h3  style="margin-top: 40px;">Javascript can change the style font of HTML element.</h3>
+    <p id="demo2">This can change the font size of the HTML element.</p>
+
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='40px'">Click This!</button>
+
+    <hr>
+    <h3 style="margin-top: 40px;">This is used to change the Paragraph.</h3>
+    <p id="demo3">This Can Change Into Other Para.</p>
+
+    <button type="button" onclick="myFunction()">Click On This!</button>
+
+    <script>
+    function myFunction() {
+     document.getElementById("demo3").innerHTML = "Previous Paragraph changed Into This!.";
+    }
+    </script>
+
+    <hr>
+    <h3 style="margin-top: 40px;">This is the Calculation of two Numbers.</h3>
+    <p id="demo4"></p>
+
+    <script>
+    document.getElementById("demo4").innerHTML = 10 + 5;
+    </script>
+    <br>
+    <h3>This joins two number.</h3>
+    <p id="demo5"></p>
+
+    <script>
+        let x, y, z;  // Statement 1
+        x = 10;        // Statement 2
+        y = 5;        // Statement 3
+        z = x + y;    // Statement 4
+
+    document.getElementById("demo5").innerHTML =
+    "The value of z is " + x + y + ".";  
+    </script>
+    <br>
+    <h3>This is the Calculation of two Numbers.</h3>
+    <p id="demo6"></p>
+
+    <script>
+        let a, b, c;
+        a = 20; b = 10; c = a + b;
+    document.getElementById("demo6").innerHTML = c;
+    </script>
+    
+    <hr>
+    <h3 style="margin-top: 40px;">JavaScript code blocks are written between { and }</h2>
+
+    <button type="button" onclick="myFunction()">Click This!</button>
+
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+    function myFunction() {
+    document.getElementById("demo7").innerHTML = "Hello This is Javascript!";
+    document.getElementById("demo8").innerHTML = "What you learn in JavaScript?";
+    }
+    </script>
+
+    <hr>
+    <h3 style="margin-top: 40px;">This is First Add two Numbers and Then Multiply with another Number.</h3>
+    <p>The let Keyword Creates Variables</p>
+
+    <p id="demo9"></p>
+
+    <script>
+    let r, s;
+    r = 5 + 6;
+    s = x * 10;
+    document.getElementById("demo9").innerHTML = s;
+    </script>
+</body>
+</html>
